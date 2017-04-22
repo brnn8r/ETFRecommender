@@ -8,8 +8,8 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${file}",
-            "outFiles": ["..\build\\**\\*.js"]
+            "program": "${workspaceRoot}/bin/main.js",
+            "outFiles": []
         },
         {
             "type": "node",
@@ -17,7 +17,7 @@
             "name": "Attach to Port",
             "address": "localhost",
             "port": 5858,
-            "outFiles": ["..\build\\**\\*.js"]
+            "outFiles": []
         }
     ]
 }
