@@ -3,6 +3,9 @@
     "rules": {
         "no-console": [
             false
+        ],
+        "max-line-length": [
+            150
         ]
     }
 }

@@ -1,7 +1,8 @@
-import { Configuration } from "./Configuration";
+import { Configuration } from "./Configuration/Configuration";
+import { IConfiguration } from "./Configuration/IConfiguration";
 import { ETFRecommender } from "./ETFRecommender";
-import { IConfiguration } from "./IConfiguration";
+import { ExchangeTradedFundRepository } from "./Repositories/ExchangeTradedFundRepository";
 
-let recommender = new ETFRecommender(Configuration.Instance);
+let recommender = new ETFRecommender(Configuration.Instance, new ExchangeTradedFundRepository());
 
-recommender.Start();
+recommender.CaclulateRecommendations();
